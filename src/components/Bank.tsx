@@ -30,7 +30,7 @@ export const Bank: FC = ({ }) => {
         anchProvider.wallet.publicKey.toBuffer(),
       ], program.programId)
 
-      await program.methods.create("bp wsos bank", {
+      await program.methods.create("bankaccount", {
         accounts: {
           bank,
           user: anchProvider.wallet.publicKey,
@@ -98,7 +98,7 @@ export const Bank: FC = ({ }) => {
   return (
     <>
       {banks.map((bank) => {
-        return (
+        return(
           <div className="md:hero-content flex flex-col">
             <h1>{bank.name.toString()}</h1>
             <span>{bank.balance.toString()}</span>
@@ -108,6 +108,15 @@ export const Bank: FC = ({ }) => {
             >
               <span>
                 Deposit 0.1
+              </span>
+            </button>
+
+            <button
+              className="group w-60 m-2 btn animate-pulse bg-gradient-to-br from-indigo-500 to-fuchsia-500 hover:from-white-500"
+              onClick={() => withdrawBank(bank.pubkey)}
+            >
+              <span>
+                Withdraw 0.1
               </span>
             </button>
           </div>

@@ -6,9 +6,9 @@ const Bank: NextPage = (props) => {
   return (
     <div>
       <Head>
-        <title>Solana Scaffold</title>
+        <title>Solana DApp</title>
         <meta
-          name="wsos 23 bank"
+          name="WsoS 2023 Bank App"
           content="Bank Functionality"
         />
       </Head>
