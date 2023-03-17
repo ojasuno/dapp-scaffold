@@ -12,6 +12,7 @@ export const BasicsView: FC = ({ }) => {
         <h1 className="text-center text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 to-fuchsia-500 mt-10 mb-8">
           Basics
         </h1>
+
         {/* CONTENT GOES HERE */}
         <div className="text-center">
           <SignMessage />
