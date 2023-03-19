@@ -107,7 +107,7 @@ export const Bank: FC = ({ }) => {
               onClick={() => depositBank(bank.pubkey)}
             >
               <span>
-                Deposit 0.1
+                Deposit 0.1 SOL
               </span>
             </button>
 
